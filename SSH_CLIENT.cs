@@ -1,6 +1,5 @@
 using Renci.SshNet;
 using Renci.SshNet.Common;
-using System.Text.RegularExpressions;
 
 // login with password
 SshClient Client = new SshClient("bandit.labs.overthewire.org", 2220, "bandit0", "bandit0");
