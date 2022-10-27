@@ -16,4 +16,4 @@ Stream.WriteLine(cmd);
 Output = Stream.Expect(new Regex(@"([$#>:])"));
 Console.Write(Output);
 
-Client.Disconnect();
+Client.Disconnect(); 
