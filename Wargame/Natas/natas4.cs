@@ -5,7 +5,7 @@ HttpClient client = new HttpClient();
 client.BaseAddress = new Uri("http://natas4.natas.labs.overthewire.org");
 string credential = Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes("natas4:???????????????????????????????????????"));
 
-HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "/index.html");
+HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "/index.php");
 request.Headers.Add("Authorization", "Basic " + credential);
 
 request.Headers.Add("Referer", "http://natas5.natas.labs.overthewire.org");

@@ -14,7 +14,4 @@ HttpResponseMessage httpResponse = await client.SendAsync(request);
 httpResponse.EnsureSuccessStatusCode();
 String body = await httpResponse.Content.ReadAsStringAsync();
 Console.WriteLine(body) ;
-
-
-
 Console.ReadLine();
