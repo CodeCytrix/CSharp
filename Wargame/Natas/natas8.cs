@@ -1,5 +1,6 @@
 using System.Net.Http;
 using System.Text;
+using System.Collections.Generic;
 
 HttpClient client = new HttpClient();
 client.BaseAddress = new Uri("http://natas8.natas.labs.overthewire.org");
