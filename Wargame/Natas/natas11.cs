@@ -30,11 +30,11 @@ string GetKey(string json, string cookie)
 }
 
 
-string MakeKey(string json, string key)
+string MakeKey(string json, string keys)
 {
     StringBuilder cyphertext = new StringBuilder(json.Length);
     for (int i = 0; i < json.Length; ++i)
-        cyphertext.Append((char)(json[i] ^ key[i % key.Length]));
+        cyphertext.Append((char)(json[i] ^ keys[i % keys.Length]));
 
     return Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(cyphertext.ToString()));
 }
