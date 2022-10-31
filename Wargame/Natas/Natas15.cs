@@ -36,7 +36,6 @@ for (int i = 0; i < 32; i++)
         Console.SetCursorPosition(0, 0);
         Console.Write(msg);
         break;
-
     }
 }
 Console.WriteLine("\nFinished!\nPassword: " + password);
